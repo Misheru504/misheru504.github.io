@@ -1,0 +1,35 @@
+:root {
+    /* Couleurs principales */
+    --bg-dark: #0a0a0f;
+    --bg-terminal: #12121a;
+    --bg-terminal-header: #1a1a24;
+    --bg-card: #16161f;
+    --bg-hover: #1e1e2a;
+    
+    /* Accents */
+    --purple-primary: #a855f7;
+    --purple-light: #c084fc;
+    --purple-dark: #7c3aed;
+    --green-terminal: #4ade80;
+    --green-dim: #22c55e;
+    --cyan-accent: #22d3ee;
+    --yellow-warning: #fbbf24;
+    --red-error: #f87171;
+    --orange-accent: #fb923c;
+    
+    /* Texte */
+    --text-primary: #e4e4e7;
+    --text-secondary: #a1a1aa;
+    --text-dim: #71717a;
+    --text-comment: #6b7280;
+    
+    /* Bordures */
+    --border-color: #27272a;
+    --border-glow: rgba(168, 85, 247, 0.3);
+    
+    /* Fonts */
+    --font-mono: 'JetBrains Mono', monospace;
+    
+    /* Spacing */
+    --nav-height: 60px;
+}

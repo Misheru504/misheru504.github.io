@@ -1,0 +1,50 @@
+body {
+    font-family: var(--font-mono);
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 4rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.prompt {
+    color: var(--green-terminal);
+}
+
+.command {
+    color: var(--cyan-accent);
+}
+
+.primary {
+    color: var(--text-primary);
+}
+
+.secondary {
+    color: var(--text-secondary);
+}
+
+.dim {
+    color: var(--text-dim);
+}
+
+.comment {
+    color: var(--text-comment);
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 4rem;
+}
+
+.footer-command {
+    margin-bottom: 1rem;
+}
