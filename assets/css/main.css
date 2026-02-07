@@ -2,7 +2,7 @@ body {
     font-family: var(--font-mono);
     background-color: var(--bg-dark);
     color: var(--text-primary);
-    line-height: 1.6;
+    line-height: var(--line-height);
     min-height: 100vh;
     overflow-x: hidden;
 }
@@ -12,6 +12,17 @@ main {
     padding-bottom: 4rem;
     max-width: 1400px;
     margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    border-top: 1px solid var(--border-color);
+    margin-top: 4rem;
+}
+
+.footer-command {
+    margin-bottom: 1rem;
 }
 
 .prompt {
@@ -38,13 +49,30 @@ main {
     color: var(--text-comment);
 }
 
-footer {
-    text-align: center;
-    padding: 3rem 1rem;
-    border-top: 1px solid var(--border-color);
-    margin-top: 4rem;
+.terminal-line {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
 }
 
-.footer-command {
-    margin-bottom: 1rem;
+.page-header {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--purple-primary);
+    margin: 1rem 0 0.5rem;
+}
+
+.page-subtitle {
+    color: var(--text-dim);
+}
+
+section {
+    margin-bottom: 2rem;
 }
