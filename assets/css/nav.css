@@ -1,3 +1,12 @@
+/**
+ * Fichier: nav.css
+ * Description: Styles en rapport avec la barre de navigation
+ * Dépendance (dans le fichier HTML): variables.css
+ *
+ * Auteur: Michel-Ange
+ * Dernière MaJ: 02/2026
+*/
+
 nav {
     position: fixed;
     top: 0;
