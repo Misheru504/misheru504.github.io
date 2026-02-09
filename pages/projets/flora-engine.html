@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flora Engine | Michel-Ange</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    
+    <nav class="terminal-nav">
+        <div class="nav-content">
+            <span class="nav-prompt">~/michel-ange $</span>
+            <a href="../../index.html" class="nav-link">accueil</a>
+            <a href="../projets.html" class="nav-link active">projets</a>
+            <a href="../a-propos.html" class="nav-link">à-propos</a>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-3 px-md-5">
+        
+        <!-- Breadcrumb -->
+        <div class="breadcrumb-terminal">
+            <span class="prompt">$</span>
+            <a href="../projets.html">cd ../projets</a>
+            <span class="separator">/</span>
+            <span class="current">flora-engine</span>
+        </div>
+
+        <article class="project-page">
+            <div class="terminal-window project-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close-fake"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <span class="terminal-title">flora-engine/README.md</span>
+                </div>
+                <div class="terminal-body">
+                    
+                    <!-- En-tête -->
+                    <div class="project-header-content">
+                        <div class="project-title-row">
+                            <h1>🌸 Flora Engine</h1>
+                            <span class="project-status wip">Work In Progress</span>
+                        </div>
+                        <p class="project-tagline">Moteur de génération procédurale de mondes en voxels</p>
+                        
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3"></i> 2026 - En cours
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-person"></i> Projet personnel
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-code-slash"></i> C#, .NET, OpenGL
+                            </span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/Misheru504/FloraEngine" target="_blank" class="project-link-btn">
+                                <i class="bi bi-github"></i> Code source
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+                    <!-- Contexte -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat contexte.md</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Contexte & Problématique</h2>
+                            <p>
+                                Passionné par les jeux comme Minecraft et les systèmes de génération procédurale, 
+                                j'ai voulu comprendre comment créer des mondes cohérents à partir d'algorithmes.
+                            </p>
+                            <div class="highlight-box">
+                                <strong>Question centrale :</strong> Comment générer un terrain infini qui reste 
+                                cohérent géographiquement tout en restant performant ?
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Devlogs -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">tail -f ./devlog.md</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Journal de développement</h2>
+                            <p class="section-intro">
+                                <span class="comment"># Chronologie du développement, des premiers tests aux dernières avancées</span>
+                            </p>
+
+                            <!-- ─────────────────────────────────────────────────────
+                                 DEVLOG ENTRY : Copie ce bloc pour chaque entrée
+                            ────────────────────────────────────────────────────── -->
+                            
+                            <!--<div class="devlog-entry">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> [DATE - ex: 15 Mars 2024]
+                                    </span>
+                                    <span class="devlog-tag">[TAG - ex: Rendu, Terrain, Optimisation]</span>
+                                </div>
+                                <h3 class="devlog-title">[TITRE DE L'ENTRÉE]</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>[DESCRIPTION - Qu'est-ce que tu as fait ? Pourquoi ? Comment ?]</p>
+                                    
+                                     Screenshot(s) pour cette entrée
+                                    <div class="devlog-screenshots">
+                                        <div class="screenshot-item">
+                                            Remplace par : <img src="../../assets/img/projets/flora-engine/[image].png" alt="...">
+                                            <div class="screenshot-placeholder">
+                                                <i class="bi bi-image"></i>
+                                                <span>[Description]</span>
+                                            </div>
+                                            <p class="screenshot-caption">[Légende]</p>
+                                        </div>
+                                    </div>
+                                    
+                                    Optionnel : Ce que tu as appris
+                                    <div class="devlog-learnings">
+                                        <strong>💡 Ce que j'ai appris :</strong>
+                                        <p>[Apprentissage clé de cette étape]</p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                            <!-- EXEMPLE D'ENTRÉE REMPLIE -->
+                            <div class="devlog-entry">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> Octobre 2025
+                                    </span>
+                                    <span class="devlog-tag">Setup</span>
+                                </div>
+                                <h3 class="devlog-title">Apprentissage de OpenGL</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>
+                                        Création du projet .NET, configuration de Silk.NET pour les bindings OpenGL.
+                                        Premiers tests : afficher un quad (rectangle) coloré à l'écran.
+                                    </p>
+                                    
+                                    <div class="devlog-screenshots">
+                                        <div class="screenshot-item">
+                                            <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/premier_quad.png" 
+                                                alt="Affichage des cubes dans la scène 3D"
+                                                class="screenshot-img">
+                                            </div>
+                                            <p class="screenshot-caption">Le fameux "Hello World" du rendu 3D avec Silk.NET</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="devlog-learnings">
+                                        <strong>💡 Ce que j'ai appris :</strong>
+                                        <p>Le pipeline OpenGL de base : shaders, VAO, VBO, et pourquoi tout ça est nécessaire.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="devlog-entry">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> Novembre 2025
+                                    </span>
+                                    <span class="devlog-tag">3D</span>
+                                </div>
+                                <h3 class="devlog-title">Premiers cubes</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>
+                                        "Implémentation" de la 3D et d'une caméra pouvant se déplacer et explorer la scène.
+                                    </p>
+                                    
+                                    <div class="devlog-screenshots row-screenshots">
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/cubes1.png" 
+                                                alt="Affichage des cubes dans la scène 3D"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Premiers cubes</p>
+                                        </div>
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/cubes1wireframe.png" 
+                                                alt="Vue des triangles composant les cubes"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Vue wireframe des cubes</p>
+                                        </div>
+                                    </div>
+                                    <div class="devlog-learnings">
+                                        <strong>💡 Ce que j'ai appris :</strong>
+                                        <p>L'utilisation de matrices pour la transformation de la 3D à un rendu 2D.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="devlog-entry">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> Novembre 2025
+                                    </span>
+                                    <span class="devlog-tag">Terrain</span>
+                                </div>
+                                <h3 class="devlog-title">Ajout de relief avec la fonction sinus</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>
+                                        Génération d'un chunk de terrain avec l'utilisation de la fonction sinus pour le relief.
+                                    </p>
+                                    
+                                    <div class="devlog-screenshots row-screenshots">
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/sinus1.png" 
+                                                alt="Chunk avec relief"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Chunk avec son terrain</p>
+                                        </div>
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/sinus2.png" 
+                                                alt="Terrain modélisé avec DESMOS"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Modélisation du terrain sur DESMOS</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="devlog-entry">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> Decembre 2025
+                                    </span>
+                                    <span class="devlog-tag">Terrain</span>
+                                    <span class="devlog-tag">Rendu</span>
+                                </div>
+                                <h3 class="devlog-title">Bruit de perlin et occlusion ambiante</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>Utilisation de bruit de perlin pour la génération et première tentative d'ajout d'effets de lumière sur le terrain (spoiler : ça ne sera pas la seule).</p>
+                                    
+                                    <div class="devlog-screenshots">
+                                        
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/perlin1.png" 
+                                                alt="Terrain avec bruit de perlin"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Rendu du terrain avec l'utilisation de bruit de perlin (Projet Lizard est l'ancien nom de Flora).</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="devlog-learnings">
+                                        <strong>💡 Ce que j'ai appris :</strong>
+                                        <p>Utilisation de bruit de perlin, meshing dit "naïf", occlusion ambiante.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="devlog-entry">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> Janvier 2026
+                                    </span>
+                                    <span class="devlog-tag">Optimisation</span>
+                                </div>
+                                <h3 class="devlog-title">Meshing et frustum</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>
+                                        Amélioration du système de rendu en implémentant du greedy meshing et du frustum culling (Les images sont sans occlusion ambiante).
+                                    </p>
+                                    
+                                    <div class="devlog-screenshots row-screenshots">
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/culled_meshing.png" 
+                                                alt="Terrain avec mesh naif"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Culled meshing (naïf) : 130k triangles (avec frustum).</p>
+                                        </div>
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/greedy_meshing.png" 
+                                                alt="Terrain avec greedy meshing"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Greedy meshing : 58k triangles (avec frustum aussi), soit moitié moins.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="devlog-learnings">
+                                        <strong>💡 Ce que j'ai appris :</strong>
+                                        <p>Algorithme de greedy meshing, frustum culling.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="devlog-entry current">
+                                <div class="devlog-header">
+                                    <span class="devlog-date">
+                                        <i class="bi bi-calendar-event"></i> Février 2026
+                                    </span>
+                                    <span class="devlog-tag">Blocs</span>
+                                </div>
+                                <h3 class="devlog-title">Ajouts de d'autres blocs</h3>
+                                
+                                <div class="devlog-content">
+                                    <p>
+                                        Création d'un atlas de texture et ajout de plusieurs types de blocs différents (donc texture différentes).
+                                    </p>
+                                    
+                                    <div class="devlog-screenshots row-screenshots">
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/blocs1.png" 
+                                                alt="Terrain avec de belles textures"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Terrain avec des textures prises depuis un pack Minecraft (ne sont pas sur le GitHub à cause des licences).</p>
+                                        </div>
+                                        <div class="screenshot-item">
+                                            <img src="../../assets/img/projets/flora-engine/blocs2.png" 
+                                                alt="Terrain avec des textures de dev"
+                                                class="screenshot-img">
+                                            <p class="screenshot-caption">Terrain avec les texture de développement (celles sur le GitHub).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Ajoute d'autres entrées ici au fur et à mesure du développement -->
+
+                        </div>
+                    </section>
+
+                    <!-- ═══════════════════════════════════════════════════════════════
+                         SECTION : GALERIE GLOBALE (optionnel, pour vue d'ensemble)
+                    ════════════════════════════════════════════════════════════════ -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">ls ./screenshots/ | head -6</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Galerie</h2>
+                            
+                            <div class="devlog-screenshots row-screenshots">
+                                <div class="screenshot-item">
+                                    <img src="../../assets/img/projets/flora-engine/gallery/grand_terrain.png" 
+                                        alt="Terrain avec plusieurs milliers de chunks"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Grand rendu du terrain pour voir le nouveau générateur (Flora utilise le même, mais les textures sont différentes).</p>
+                                </div>
+                                <div class="screenshot-item">
+                                    <img src="../../assets/img/projets/flora-engine/gallery/oa.png" 
+                                        alt="Sphere de test"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Sphere pour tester l'occlusion ambiante et le meshing.</p>
+                                </div>
+                                <div class="screenshot-item">
+                                    <img src="../../assets/img/projets/flora-engine/gallery/normals.png" 
+                                        alt="Terrain avec uniquement le rendu des normals"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Rendu des normals (calcul de lumière).</p>
+                                </div>
+                                <div class="screenshot-item">
+                                    <img src="../../assets/img/projets/flora-engine/gallery/uvs.png" 
+                                        alt="Terrain avec uniquement le rendu des UVs"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Rendu des UVs (calcul des textures) en culled meshing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ═══════════════════════════════════════════════════════════════
+                         SECTION : DÉFIS TECHNIQUES
+                    ════════════════════════════════════════════════════════════════ -->
+                    <!-- <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">grep -r "CHALLENGE" ./</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Défis rencontrés</h2>
+                            
+                            <div class="challenges-list">
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">⚠️</span>
+                                    <div class="challenge-content">
+                                        <strong>Performance du rendu</strong>
+                                        <p><span class="label-problem">Problème :</span> Rendu de millions de voxels = lag intense.</p>
+                                        <p><span class="label-solution">Solution :</span> Greedy meshing + culling des faces cachées.</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="challenge-item">
+                                    <span class="challenge-icon">⚠️</span>
+                                    <div class="challenge-content">
+                                        <strong>Cohérence aux frontières</strong>
+                                        <p><span class="label-problem">Problème :</span> Artefacts visuels entre les chunks.</p>
+                                        <p><span class="label-solution">Solution :</span> Génération avec overlap d'un bloc.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section> -->
+
+                    <!-- ═══════════════════════════════════════════════════════════════
+                         SECTION : STACK TECHNIQUE
+                    ════════════════════════════════════════════════════════════════ -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat requirements.txt</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Stack technique</h2>
+                            <div class="tech-detailed">
+                                <div class="tech-category">
+                                    <h4>Langage & Runtime</h4>
+                                    <ul>
+                                        <li><code>C# 12</code> — Langage principal</li>
+                                        <li><code>.NET 8</code> — Runtime cross-platform</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Graphismes</h4>
+                                    <ul>
+                                        <li><code>Silk.NET</code> — Bindings OpenGL</li>
+                                        <li><code>OpenGL</code> — API de rendu</li>
+                                        <li><code>GLSL</code> — Shaders</li>
+                                    </ul>
+                                </div>
+                                <div class="tech-category">
+                                    <h4>Algorithmes</h4>
+                                    <ul>
+                                        <li><code>Simplex Noise</code> — Génération de terrain</li>
+                                        <li><code>Greedy Meshing</code> — Optimisation</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- ═══════════════════════════════════════════════════════════════
+                         SECTION : PROCHAINES ÉTAPES
+                    ════════════════════════════════════════════════════════════════ -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat TODO.md</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Prochaines étapes (pas d'ordre)</h2>
+                            <div class="todo-list">
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Refactorisation du projet</span>
+                                </div>
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Meilleures textures</span>
+                                </div>
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Éclairage dynamique / coloré / bloom</span>
+                                </div>
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Skybox</span>
+                                </div>
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Système de biomes</span>
+                                </div>
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Système de détails de terrains (arbres, petits lacs, etc.)</span>
+                                </div>
+                                <div class="todo-item pending">
+                                    <span class="todo-checkbox">☐</span>
+                                    <span>Sauvegarde et lecture des mondes sur le disque</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">ls ./bugs/ <span class="flag">--hall-of-shame</span></span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Hall of Shame</h2>
+                            <p><span class="comment"># Les bugs les plus mémorables</span></p>
+                            
+                            <div class="gallery-grid fails-gallery">
+                                <div class="gallery-item">
+                                    <img src="../../assets/img/projets/flora-engine/bugs/chunk.png" alt="Bug 1">
+                                    <p class="gallery-caption">Sympa le terrain</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/img/projets/flora-engine/bugs/normals.png" alt="Bug 2">
+                                    <p class="gallery-caption">Le monde en bleu</p>
+                                </div>
+                                <div class="gallery-item">
+                                    <img src="../../assets/img/projets/flora-engine/bugs/vertices.png" alt="Bug 3">
+                                    <p class="gallery-caption">Textures? Jamais entendu parler</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+
+        <!-- Navigation -->
+        <nav class="project-navigation">
+            <a href="../projets.html" class="nav-prev">
+                <i class="bi bi-arrow-left"></i>
+                <span>Tous les projets</span>
+            </a>
+            <a href="click-oclock.html" class="nav-next">
+                <span>Click o'Clock</span>
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </nav>
+
+    </main>
+
+    <footer class="terminal-footer">
+        <div class="footer-content">
+            <span class="footer-prompt">~/michel-ange/projets/flora-engine $</span>
+            <span class="footer-text">cd ..</span>
+        </div>
+        <p class="footer-credit">
+            Fait avec <span class="heart">💜</span> par Michel-Ange · 2026
+        </p>
+    </footer>
+</body>
+</html>

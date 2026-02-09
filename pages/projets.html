@@ -1,63 +1,161 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Michel-Ange | Portfolio</title>
-
-        <!-- Bootstrap 5 -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-
-        <!-- Google Fonts - JetBrains Mono -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Michel-Ange</title>
     
-        <!-- Fichiers CSS -->
-        <link rel="stylesheet" href="../assets/css/variables.css">
-        <link rel="stylesheet" href="../assets/css/main.css">
-        <link rel="stylesheet" href="../assets/css/nav.css">
-    </head>
-    <body>
-        <nav>
-            <span class="prompt">[portfolio@michel-ange ~/projets]$</span>
-            <span class="command">cd</span>
-            
-            <a href="../index.html" class="nav-link">~/accueil</a>
-            <a href="./projets.html" class="nav-link active">~/projets</a>
-            <a href="./a-propos.html" class="nav-link">~/à-propos</a>
-        </nav>
-        <main class="container-fluid px-3 px-md-5">
-            <section class="page-header">
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">ls -la ./projets</span>
-                </div>
-                <h1 class="page-title">Projets</h1>
-                <p class="page-subtitle">
-                    <span class="comment"># Mes travaux et expériences</span>
-                </p>
-            </section>
-            <section>
-                <div class="terminal-line">
-                    <span class="prompt">$</span>
-                    <span class="command">echo $STATUS</span>
-                </div>
-                <p>
-                    <span class="primary">"Soon™..."</span>
-                </p>
-            </section>
-        </main>
-        <footer>
-            <div class="footer-command">
-                <span class="prompt">~/michel-ange $</span>
-                <span class="command">exit</span>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    
+    <nav class="terminal-nav">
+        <div class="nav-content">
+            <span class="nav-prompt">~/michel-ange $</span>
+            <a href="../index.html" class="nav-link">accueil</a>
+            <a href="projets.html" class="nav-link active">projets</a>
+            <a href="a-propos.html" class="nav-link">à-propos</a>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-3 px-md-5">
+        
+        <!-- Header -->
+        <section class="page-header">
+            <div class="terminal-line">
+                <span class="prompt">$</span>
+                <span class="command">ls -la ./projets/</span>
             </div>
-            <p class="secondary">
-                Fait avec <span class="heart">💜</span> par Michel-Ange - 2026
+            <h1 class="page-title">Projets</h1>
+            <p class="page-subtitle">
+                <span class="comment"># Mes réalisations et expérimentations</span>
             </p>
-        </footer>
-    </body>
+        </section>
+
+        <!-- Liste des projets -->
+        <section class="projects-grid-section">
+            <div class="row g-4">
+                
+                <!-- Flora Engine -->
+                <div class="col-lg-6">
+                    <a href="projets/flora-engine.html" class="project-card-link">
+                        <div class="project-card">
+                            <div class="project-card-header">
+                                <span class="file-icon">🌸</span>
+                                <span class="project-name">flora-engine/</span>
+                                <span class="project-status wip">WIP</span>
+                            </div>
+                            <div class="project-card-body">
+                                <h3 class="project-card-title">Flora Engine</h3>
+                                <p class="project-desc">
+                                    Moteur de génération procédurale de mondes en voxels avec OpenGL. 
+                                    Création de terrains infinis à partir d'algorithmes de bruit.
+                                </p>
+                                <div class="project-meta-mini">
+                                    <span><i class="bi bi-calendar3"></i> 2026 - En cours</span>
+                                    <span><i class="bi bi-person"></i> Solo</span>
+                                </div>
+                                <div class="project-tech">
+                                    <code>C#</code>
+                                    <code>.NET</code>
+                                    <code>OpenGL</code>
+                                    <code>Silk.NET</code>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="view-more">
+                                    <span class="prompt">$</span> cat README.md <i class="bi bi-arrow-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Click o'Clock -->
+                <div class="col-lg-6">
+                    <a href="projets/click-oclock.html" class="project-card-link">
+                        <div class="project-card">
+                            <div class="project-card-header">
+                                <span class="file-icon">🎲</span>
+                                <span class="project-name">click-oclock/</span>
+                                <span class="project-status complete">Terminé</span>
+                            </div>
+                            <div class="project-card-body">
+                                <h3 class="project-card-title">Click o'Clock</h3>
+                                <p class="project-desc">
+                                    Jeu créé en 30h lors de la Code Game Jam de l'IUT Montpellier. 
+                                    Développement intensif avec contrainte de temps et thème imposé.
+                                </p>
+                                <div class="project-meta-mini">
+                                    <span><i class="bi bi-calendar3"></i> 2026</span>
+                                    <span><i class="bi bi-people"></i> Équipe</span>
+                                </div>
+                                <div class="project-tech">
+                                    <code>C#</code>
+                                    <code>Unity</code>
+                                    <code>Git</code>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="view-more">
+                                    <span class="prompt">$</span> cat README.md <i class="bi bi-arrow-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 
+                ═══════════════════════════════════════════════════════════════════
+                TEMPLATE PROJET
+                ═══════════════════════════════════════════════════════════════════
+                
+                <div class="col-lg-6">
+                    <a href="projets/[nom-fichier].html" class="project-card-link">
+                        <div class="project-card">
+                            <div class="project-card-header">
+                                <span class="file-icon">[EMOJI]</span>
+                                <span class="project-name">[nom-projet]/</span>
+                                <span class="project-status [wip|complete]">[Statut]</span>
+                            </div>
+                            <div class="project-card-body">
+                                <h3 class="project-card-title">[Nom du Projet]</h3>
+                                <p class="project-desc">[Description courte]</p>
+                                <div class="project-meta-mini">
+                                    <span><i class="bi bi-calendar3"></i> [Année]</span>
+                                    <span><i class="bi bi-person"></i> [Solo/Équipe]</span>
+                                </div>
+                                <div class="project-tech">
+                                    <code>[Tech]</code>
+                                </div>
+                            </div>
+                            <div class="project-card-footer">
+                                <span class="view-more">
+                                    <span class="prompt">$</span> cat README.md <i class="bi bi-arrow-right"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                -->
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="terminal-footer">
+        <div class="footer-content">
+            <span class="footer-prompt">~/michel-ange/projets $</span>
+            <span class="footer-text">cd ..</span>
+        </div>
+        <p class="footer-credit">
+            Fait avec <span class="heart">💜</span> par Michel-Ange · 2026
+        </p>
+    </footer>
+</body>
 </html>

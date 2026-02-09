@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click o'Clock | Michel-Ange</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    
+    <nav class="terminal-nav">
+        <div class="nav-content">
+            <span class="nav-prompt">~/michel-ange $</span>
+            <a href="../../index.html" class="nav-link">accueil</a>
+            <a href="../projets.html" class="nav-link active">projets</a>
+            <a href="../a-propos.html" class="nav-link">à-propos</a>
+        </div>
+    </nav>
+
+    <main class="container-fluid px-3 px-md-5">
+        
+        <div class="breadcrumb-terminal">
+            <span class="prompt">$</span>
+            <a href="../projets.html">cd ../projets</a>
+            <span class="separator">/</span>
+            <span class="current">click-oclock</span>
+        </div>
+
+        <article class="project-page">
+            <div class="terminal-window project-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="btn-close-fake"></span>
+                        <span class="btn-minimize"></span>
+                        <span class="btn-maximize"></span>
+                    </div>
+                    <span class="terminal-title">click-oclock/README.md</span>
+                </div>
+                <div class="terminal-body">
+                    
+                    <!-- En-tête -->
+                    <div class="project-header-content">
+                        <div class="project-title-row">
+                            <h1>🎲 Click o'Clock</h1>
+                            <span class="project-status complete">Terminé</span>
+                        </div>
+                        <p class="project-tagline">Jeu créé en 30h lors d'une Game Jam</p>
+                        
+                        <div class="project-meta">
+                            <span class="meta-item">
+                                <i class="bi bi-calendar3"></i> 22-24 Janvier 2026
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-people"></i> Projet en équipe
+                            </span>
+                            <span class="meta-item">
+                                <i class="bi bi-code-slash"></i> C#, Unity, Git
+                            </span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="https://misheru504.itch.io/click-o-clock" class="project-link-btn primary">
+                                <i class="bi bi-controller"></i> Jouer sur itch.io
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- Contexte -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">cat contexte.md</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Contexte</h2>
+                            <p>
+                                La <strong>Code Game Jam</strong> de l'IUT de Montpellier est une jam où des étudiants 
+                                partout en France (et à l'étranger!) créent des jeux vidéo complet en <strong>30 heures</strong>.
+                            </p>
+                            
+                            <!-- [PLACEHOLDER] Complète les infos -->
+                            <div class="jam-info">
+                                <div class="jam-detail">
+                                    <span class="jam-label">Événement</span>
+                                    <span class="jam-value">Code Game Jam</span>
+                                </div>
+                                <div class="jam-detail">
+                                    <span class="jam-label">Durée</span>
+                                    <span class="jam-value">30 heures</span>
+                                </div>
+                                <div class="jam-detail">
+                                    <span class="jam-label">Thème</span>
+                                    <span class="jam-value">Fêtes des clics !</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Le jeu -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">./click-oclock --describe</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Le concept</h2>
+                            
+                            <!-- [PLACEHOLDER] Décris le gameplay -->
+                            <p>Le jeu se joue avec un compagnon robot controllé à la souris. Le but est de faire le plus d'acctractions possible dans une fête forraine avant minuit.</p>
+                            
+                            <div class="highlight-box">
+                                <strong>Notre interprétation du thème :</strong> 
+                                "Fête" comme "faite" et les clics comme les clics d'une souris mais aussi les clics d'engrenages dans une horloge.
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Screenshots -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">ls ./screenshots/</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Captures du jeu</h2>
+                            
+                            <div class="screenshots-grid">
+                                <div class="screenshot-item large">
+                                    <img src="../../assets/img/projets/click-oclock/jeu.png" 
+                                        alt="Terrain avec uniquement le rendu des UVs"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Capture de gameplay</p>
+                                </div>
+                                <div class="screenshot-item">
+                                    <img src="../../assets/img/projets/click-oclock/menu.png" 
+                                        alt="Terrain avec uniquement le rendu des UVs"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Écran titre</p>
+                                </div>
+                                <div class="screenshot-item">
+                                    <img src="../../assets/img/projets/click-oclock/unity.png" 
+                                        alt="Terrain avec uniquement le rendu des UVs"
+                                        class="screenshot-img">
+                                    <p class="screenshot-caption">Unity</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Mon rôle -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">git log --author="Michel-Ange"</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Mon rôle</h2>
+                            
+                            <!-- [PLACEHOLDER] Décris ton rôle -->
+                            <div class="role-grid">
+                                <div class="role-card">
+                                    <span class="role-icon">💻</span>
+                                    <h4>Développeur</h4>
+                                    <p>J'ai travaillé sur la partie "code" du projet, en travaillant notamment sur les mini-jeux</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Ce que j'ai appris -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">echo $LESSONS_LEARNED</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Ce que j'ai appris</h2>
+                            <ul class="lessons-list">
+                                <li>Travail d'équipe sous rush</li>
+                                <li>Travailler sous pression avec deadline serrée</li>
+                                <li>Prioriser les features (MVP)</li>
+                                <li>Workflow Git en conditions réelles</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+        <nav class="project-navigation">
+            <a href="flora-engine.html" class="nav-prev">
+                <i class="bi bi-arrow-left"></i>
+                <span>Flora Engine</span>
+            </a>
+            <a href="../projets.html" class="nav-next">
+                <span>Tous les projets</span>
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </nav>
+
+    </main>
+
+    <footer class="terminal-footer">
+        <div class="footer-content">
+            <span class="footer-prompt">~/michel-ange/projets/click-oclock $</span>
+            <span class="footer-text">cd ..</span>
+        </div>
+        <p class="footer-credit">
+            Fait avec <span class="heart">💜</span> par Michel-Ange · 2026
+        </p>
+    </footer>
+</body>
+</html>
