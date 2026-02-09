@@ -1,7 +1,7 @@
 # 🖥️ Portfolio Michel-Ange
 
 > [!IMPORTANT]
-> Le code de ce projet est majoritairement généré par Claude.AI. Malgré mes révisions, j'ai prévu de refaire ce site lorsque j'en aurais le temps (j'ai besoin d'un portfolio). Je n'ai pas utilisé l'IA générative dans mes autres projets et, à termes, celui n'en contiendra plus.
+> Le code de ce projet est majoritairement généré par Claude.AI. Malgré mes révisions du code et du contenu des pages, j'ai prévu de refaire ce site lorsque j'en aurais le temps (mais j'ai actuellement besoin d'un portfolio). Je n'ai pas utilisé l'IA générative dans mes autres projets et, à termes, celui n'en contiendra plus. L'utilisation de l'IA ici ne devrait pas remettre en question mes compétences de développement web statique.
 
 Portfolio personnel style terminal, 100% HTML/CSS.
 
@@ -56,4 +56,4 @@ Couleur principale dans `assets/css/style.css` :
 
 ---
 
-Fait avec 💜 par Michel-Ange (et Claude ducoup)
+Fait avec 💜 par Michel-Ange (et Claude)
