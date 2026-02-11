@@ -90,6 +90,25 @@
                         </div>
                     </section>
 
+                    <!-- Technos -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">grep -r "technologies"</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Choix des technologies</h2>
+                            <div class="highlight-box">
+                                <strong>Language de programmation : </strong>Le choix du C# c'est fait naturellement, c'est un langage que je maîtrise depuis longtemps grâce à des moteurs de jeu comme Unity ou MonoGame.
+                                Cependant ce genre de projet est généralement fait en C++ ou Rust, et j'apprend actuellement le C++.
+                            </div>
+                            <div class="highlight-box">
+                                <strong>API graphique : </strong>Le choix de Silk.NET me semble tout aussi logique. Il est une approche moderne à ce qui se fait avec OpenTK. Il est plus performant au prix d'être plus bas-niveau.
+                                Il ressemble aussi à OpenGL sur C++, et permet de mieux comprendre le pipeline graphique. Il est aussi cross-platform et supporte plusieurs API graphique, comme Vulcan.
+                                Voulant apprendre quelque chose de bas-niveau et de polyvalent, le choix de Silk.NET m'est cohérent.
+                            </div>
+                        </div>
+                    </section>
                     <!-- Devlogs -->
                     <section class="study-section">
                         <div class="terminal-line">
@@ -200,6 +219,10 @@
                                             <p class="screenshot-caption">Vue wireframe des cubes</p>
                                         </div>
                                     </div>
+                                    <div class="devlog-difficulties">
+                                        <strong>❌ Difficulté rencontrée :</strong>
+                                        <p>Chaque face à un sens de rendu (front ou back). Besoin de face-culling (ne pas afficher les faces invisibles).</p>
+                                    </div>
                                     <div class="devlog-learnings">
                                         <strong>💡 Ce que j'ai appris :</strong>
                                         <p>L'utilisation de matrices pour la transformation de la 3D à un rendu 2D.</p>
@@ -234,6 +257,10 @@
                                                 class="screenshot-img">
                                             <p class="screenshot-caption">Modélisation du terrain sur DESMOS</p>
                                         </div>
+                                    </div>
+                                    <div class="devlog-difficulties">
+                                        <strong>❌ Difficulté rencontrée :</strong>
+                                        <p>Bottleneck sur le nombre de commandes envoyé à la carte graphique par le processeur. Besoin d'optimisation aussi tôt dans le projet.</p>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +323,10 @@
                                             <p class="screenshot-caption">Greedy meshing : 58k triangles (avec frustum aussi), soit moitié moins.</p>
                                         </div>
                                     </div>
-                                    
+                                    <div class="devlog-difficulties">
+                                        <strong>❌ Difficulté rencontrée :</strong>
+                                        <p>Conception de l'algorithme de greedy meshing : masques et agrandissement de quads. L'algorithme est simple à expliquer mais difficile à implementer pour du temps réel.</p>
+                                    </div>
                                     <div class="devlog-learnings">
                                         <strong>💡 Ce que j'ai appris :</strong>
                                         <p>Algorithme de greedy meshing, frustum culling.</p>
@@ -459,15 +489,16 @@
                             <span class="command">cat TODO.md</span>
                         </div>
                         <div class="study-content">
-                            <h2>Prochaines étapes (pas d'ordre)</h2>
+                            <h2>Prochaines étapes</h2>
                             <div class="todo-list">
                                 <div class="todo-item pending">
                                     <span class="todo-checkbox">☐</span>
                                     <span>Refactorisation du projet</span>
+                                    <span class="devlog-tag">En cours</span>
                                 </div>
                                 <div class="todo-item pending">
                                     <span class="todo-checkbox">☐</span>
-                                    <span>Meilleures textures</span>
+                                    <span>Skybox</span>
                                 </div>
                                 <div class="todo-item pending">
                                     <span class="todo-checkbox">☐</span>
@@ -475,7 +506,7 @@
                                 </div>
                                 <div class="todo-item pending">
                                     <span class="todo-checkbox">☐</span>
-                                    <span>Skybox</span>
+                                    <span>Meilleures textures</span>
                                 </div>
                                 <div class="todo-item pending">
                                     <span class="todo-checkbox">☐</span>
@@ -489,6 +520,30 @@
                                     <span class="todo-checkbox">☐</span>
                                     <span>Sauvegarde et lecture des mondes sur le disque</span>
                                 </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Differences -->
+                    <section class="study-section">
+                        <div class="terminal-line">
+                            <span class="prompt">$</span>
+                            <span class="command">git diff</span>
+                        </div>
+                        <div class="study-content">
+                            <h2>Ce qui aurait pu être fait différement</h2>
+                            <div class="highlight-box">
+                                <strong>Choix du language : </strong> un language, comme le C++ ou Rust, est généralement plus adapté pour ces projets car ils sont plus rapides.
+                            </div>
+                            <div class="highlight-box">
+                                <strong>API graphique : </strong>Même si OpenGL fonctionne aujourd'hui partout, d'autres API comme Vulkan sont plus performantes (mais plus difficile à implementer).
+                            </div>
+                            <div class="highlight-box">
+                                <strong>Meshing : </strong>Une solution pouvant être plus rapide que le meshing traditionnel pour des mondes en voxels est le raytracing (différent de la lumière). 
+                                Pour afficher un voxel, on lance un rayon depuis chaque pixel de l'écran et vérifie s'il touche un bloc. Les cartes graphiques modernes possèdent même des coeurs dédiés à ce processus.
+                            </div>
+                            <div class="highlight-box">
+                                <strong>Chunk : </strong>Chaque chunk du monde pourrait être des octrees : il s'agit d'une structure 3D pouvant s'auto-diviser en huit autres structures du même type. Cela permet à des chunks distant d'occuper une grande partie du monde.
                             </div>
                         </div>
                     </section>

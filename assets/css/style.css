@@ -426,6 +426,38 @@ main {
     border-color: var(--purple-primary);
 }
 
+/* Image/GIF dans les cartes projet */
+.project-card-preview {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-card-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-card-preview img {
+    transform: scale(1.05);
+}
+
+/* Placeholder si pas encore d'image */
+.project-card-preview-placeholder {
+    width: 100%;
+    height: 180px;
+    background: var(--bg-card);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dim);
+    font-size: 3rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    GOALS
    ───────────────────────────────────────────────────────────────────────────── */
@@ -632,6 +664,17 @@ main {
 
 .devlog-learnings strong { color: var(--green-terminal); }
 .devlog-learnings p { margin: 0.5rem 0 0 0; }
+
+.devlog-difficulties {
+    background: rgba(248, 113, 113, 0.1);
+    border-left: 3px solid var(--red-error);
+    padding: 1rem;
+    border-radius: 0 8px 8px 0;
+    margin-top: 1rem;
+}
+
+.devlog-difficulties strong { color: var(--red-error); }
+.devlog-difficulties p { margin: 0.5rem 0 0 0; }
 
 /* ─────────────────────────────────────────────────────────────────────────────
    SCREENSHOTS & GALLERY
