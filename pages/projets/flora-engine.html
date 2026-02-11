@@ -18,6 +18,11 @@
             <a href="../../index.html" class="nav-link">accueil</a>
             <a href="../projets.html" class="nav-link active">projets</a>
             <a href="../a-propos.html" class="nav-link">à-propos</a>
+
+            <a href="../a-propos.html#contact" class="nav-status">
+                <span class="status-dot"></span>
+                Recherche stage - Juin 2026 - Montpellier
+            </a>
         </div>
     </nav>
 
@@ -99,12 +104,12 @@
                         <div class="study-content">
                             <h2>Choix des technologies</h2>
                             <div class="highlight-box">
-                                <strong>Language de programmation : </strong>Le choix du C# c'est fait naturellement, c'est un langage que je maîtrise depuis longtemps grâce à des moteurs de jeu comme Unity ou MonoGame.
-                                Cependant ce genre de projet est généralement fait en C++ ou Rust, et j'apprend actuellement le C++.
+                                <strong>Langage de programmation : </strong>Le choix du C# s'est fait naturellement, c'est un langage que je maîtrise depuis longtemps grâce à des moteurs de jeu comme Unity ou MonoGame.
+                                Cependant ce genre de projet est généralement fait en C++ ou Rust, et j'apprends actuellement le C++.
                             </div>
                             <div class="highlight-box">
-                                <strong>API graphique : </strong>Le choix de Silk.NET me semble tout aussi logique. Il est une approche moderne à ce qui se fait avec OpenTK. Il est plus performant au prix d'être plus bas-niveau.
-                                Il ressemble aussi à OpenGL sur C++, et permet de mieux comprendre le pipeline graphique. Il est aussi cross-platform et supporte plusieurs API graphique, comme Vulcan.
+                                <strong>API graphique : </strong>Le choix de Silk.NET me semble tout aussi logique. Il offre une approche moderne à ce qui se fait avec OpenTK. Il est plus performant au prix d'être plus bas-niveau.
+                                Il ressemble aussi à OpenGL sur C++, et permet de mieux comprendre le pipeline graphique. Il est aussi cross-platform et supporte plusieurs API graphique, comme Vulkan.
                                 Voulant apprendre quelque chose de bas-niveau et de polyvalent, le choix de Silk.NET m'est cohérent.
                             </div>
                         </div>
@@ -175,11 +180,9 @@
                                     
                                     <div class="devlog-screenshots">
                                         <div class="screenshot-item">
-                                            <div class="screenshot-item">
                                             <img src="../../assets/img/projets/flora-engine/premier_quad.png" 
-                                                alt="Affichage des cubes dans la scène 3D"
+                                                alt="Affichage d'un quad sur l'écran"
                                                 class="screenshot-img">
-                                            </div>
                                             <p class="screenshot-caption">Le fameux "Hello World" du rendu 3D avec Silk.NET</p>
                                         </div>
                                     </div>
@@ -221,7 +224,7 @@
                                     </div>
                                     <div class="devlog-difficulties">
                                         <strong>❌ Difficulté rencontrée :</strong>
-                                        <p>Chaque face à un sens de rendu (front ou back). Besoin de face-culling (ne pas afficher les faces invisibles).</p>
+                                        <p>Chaque face a un sens de rendu (front ou back). Besoin de face-culling (ne pas afficher les faces invisibles).</p>
                                     </div>
                                     <div class="devlog-learnings">
                                         <strong>💡 Ce que j'ai appris :</strong>
@@ -260,7 +263,7 @@
                                     </div>
                                     <div class="devlog-difficulties">
                                         <strong>❌ Difficulté rencontrée :</strong>
-                                        <p>Bottleneck sur le nombre de commandes envoyé à la carte graphique par le processeur. Besoin d'optimisation aussi tôt dans le projet.</p>
+                                        <p>Bottleneck sur le nombre de commandes envoyées à la carte graphique par le processeur. Besoin d'optimisation aussitôt dans le projet.</p>
                                     </div>
                                 </div>
                             </div>
@@ -268,7 +271,7 @@
                             <div class="devlog-entry">
                                 <div class="devlog-header">
                                     <span class="devlog-date">
-                                        <i class="bi bi-calendar-event"></i> Decembre 2025
+                                        <i class="bi bi-calendar-event"></i> Décembre 2025
                                     </span>
                                     <span class="devlog-tag">Terrain</span>
                                     <span class="devlog-tag">Rendu</span>
@@ -325,7 +328,7 @@
                                     </div>
                                     <div class="devlog-difficulties">
                                         <strong>❌ Difficulté rencontrée :</strong>
-                                        <p>Conception de l'algorithme de greedy meshing : masques et agrandissement de quads. L'algorithme est simple à expliquer mais difficile à implementer pour du temps réel.</p>
+                                        <p>Conception de l'algorithme de greedy meshing : masques et agrandissement de quads. L'algorithme est simple à expliquer mais difficile à implémenter pour du temps réel.</p>
                                     </div>
                                     <div class="devlog-learnings">
                                         <strong>💡 Ce que j'ai appris :</strong>
@@ -341,7 +344,7 @@
                                     </span>
                                     <span class="devlog-tag">Blocs</span>
                                 </div>
-                                <h3 class="devlog-title">Ajouts de d'autres blocs</h3>
+                                <h3 class="devlog-title">Ajouts d'autres blocs</h3>
                                 
                                 <div class="devlog-content">
                                     <p>
@@ -409,39 +412,6 @@
                             </div>
                         </div>
                     </section>
-
-                    <!-- ═══════════════════════════════════════════════════════════════
-                         SECTION : DÉFIS TECHNIQUES
-                    ════════════════════════════════════════════════════════════════ -->
-                    <!-- <section class="study-section">
-                        <div class="terminal-line">
-                            <span class="prompt">$</span>
-                            <span class="command">grep -r "CHALLENGE" ./</span>
-                        </div>
-                        <div class="study-content">
-                            <h2>Défis rencontrés</h2>
-                            
-                            <div class="challenges-list">
-                                <div class="challenge-item">
-                                    <span class="challenge-icon">⚠️</span>
-                                    <div class="challenge-content">
-                                        <strong>Performance du rendu</strong>
-                                        <p><span class="label-problem">Problème :</span> Rendu de millions de voxels = lag intense.</p>
-                                        <p><span class="label-solution">Solution :</span> Greedy meshing + culling des faces cachées.</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="challenge-item">
-                                    <span class="challenge-icon">⚠️</span>
-                                    <div class="challenge-content">
-                                        <strong>Cohérence aux frontières</strong>
-                                        <p><span class="label-problem">Problème :</span> Artefacts visuels entre les chunks.</p>
-                                        <p><span class="label-solution">Solution :</span> Génération avec overlap d'un bloc.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section> -->
 
                     <!-- ═══════════════════════════════════════════════════════════════
                          SECTION : STACK TECHNIQUE
@@ -531,19 +501,19 @@
                             <span class="command">git diff</span>
                         </div>
                         <div class="study-content">
-                            <h2>Ce qui aurait pu être fait différement</h2>
+                            <h2>Ce qui aurait pu être fait différemment</h2>
                             <div class="highlight-box">
-                                <strong>Choix du language : </strong> un language, comme le C++ ou Rust, est généralement plus adapté pour ces projets car ils sont plus rapides.
+                                <strong>Choix du langage : </strong> un langage comme le C++ ou Rust, est généralement plus adapté pour ces projets car ils sont plus rapides.
                             </div>
                             <div class="highlight-box">
-                                <strong>API graphique : </strong>Même si OpenGL fonctionne aujourd'hui partout, d'autres API comme Vulkan sont plus performantes (mais plus difficile à implementer).
+                                <strong>API graphique : </strong>Même si OpenGL fonctionne aujourd'hui partout, d'autres API comme Vulkan sont plus performantes (mais plus difficiles à implémenter).
                             </div>
                             <div class="highlight-box">
                                 <strong>Meshing : </strong>Une solution pouvant être plus rapide que le meshing traditionnel pour des mondes en voxels est le raytracing (différent de la lumière). 
                                 Pour afficher un voxel, on lance un rayon depuis chaque pixel de l'écran et vérifie s'il touche un bloc. Les cartes graphiques modernes possèdent même des coeurs dédiés à ce processus.
                             </div>
                             <div class="highlight-box">
-                                <strong>Chunk : </strong>Chaque chunk du monde pourrait être des octrees : il s'agit d'une structure 3D pouvant s'auto-diviser en huit autres structures du même type. Cela permet à des chunks distant d'occuper une grande partie du monde.
+                                <strong>Chunk : </strong>Chaque chunk du monde pourrait être des octrees : il s'agit d'une structure 3D pouvant s'auto-diviser en huit autres structures du même type. Cela permet à des chunks distants d'occuper une grande partie du monde.
                             </div>
                         </div>
                     </section>
